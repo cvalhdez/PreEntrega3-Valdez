@@ -53,8 +53,8 @@
         <h2>Carrito de compras</h2>
         <div class="containerCarrito">
           <p class="carritoVacio">Aun no has agregado nada a tu carrito</p>
-          <div class="carritoProductos desactivado">
-<!--             <div class="carritoProducto ">
+          <div class="carritoProductos">
+<!--          <div class="carritoProducto ">
               <img class="carritoProductoImagen" src="../images/pale.jpg" alt="Pale">
               <div class="carritoSeparador">
                 <p>Producto</p>
@@ -75,13 +75,15 @@
               <button class="carritoProductoBorrar">Borrar</button>
             </div> -->
           </div>
-          <div class="carritoAcciones">
-            <button class="carritoVaciar">Vaciar Carrito</button>
-            <div class="carritoTotal">
-              <p>Total</p>
-              <p id="total">$500</p>
+          <div class="carritoAcciones desactivado">
+            <div class="containerAcciones">
+              <button class="carritoVaciar">Vaciar Carrito</button>
+              <div class="carritoTotal">
+                <p>Total</p>
+                <p id="total">$500</p>
+                <button class="carritoComprar">Comprar Ahora</button>
+              </div>
             </div>
-            <button class="carritoComprar">Comprar Ahora</button>
           </div>
           <div class="carritoComprado desactivado">
             <p>Gracias por tu compra</p>
@@ -115,8 +117,6 @@
     <!-- LINK ION-ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- LINK JS TOOGLE MENU-->
-    <script src="./main.js"></script>
     <!-- LINK JS APP-->
     <script src="../app/carrito.js"></script>
   </body>

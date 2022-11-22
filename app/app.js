@@ -85,9 +85,10 @@ function actualizarBotonCompra () {
 actualizarBotonCompra ();
 
 let productosCarrito;
-const productosCarritoLS = JSON.parse(localStorage.getItem("productosCarrito"));
+let productosCarritoLS = localStorage.getItem("productosCarrito");
+
 if (productosCarritoLS){
-  productosCarrito = productosCarritoLS;
+  productosCarrito = JSON.parse(productosCarritoLS);
   actualizarNumero();
 } else {
   productosCarrito = [];

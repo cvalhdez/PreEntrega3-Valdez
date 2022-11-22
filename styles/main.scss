@@ -471,6 +471,7 @@ html {
         margin: auto;
         text-align: center;
         font-size: 2rem;
+        margin: 50px 0;
       }
       .carritoProductos{
         .carritoProducto{
@@ -498,25 +499,30 @@ html {
         }
       }
       .carritoAcciones{
-        display: flex;
-        flex-direction: row;
         width: 80%;
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
-        justify-content: space-between;
-        .carritoTotal{
+        .containerAcciones{
           display: flex;
           flex-direction: row;
-          gap: 2rem;
-        }
-        button{
-          background: map-get($colores, golden );
-          width: 200px;
-          height: 30px;
-          text-transform: uppercase;
-          border-style: none;
-          border-radius: 5px;
+          justify-content: space-around;
+          .carritoTotal{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+          }
+          button{
+            background: map-get($colores, golden );
+            width: 200px;
+            height: 30px;
+            text-transform: uppercase;
+            border-style: none;
+            border-radius: 5px;
+            &:hover{
+              cursor: pointer;
+            }
+          }
         }
       }
       .carritoComprado{

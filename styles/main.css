@@ -468,6 +468,7 @@ html {
   margin: auto;
   text-align: center;
   font-size: 2rem;
+  margin: 50px 0;
 }
 .main #sectionCarrito .containerCarrito .carritoProductos .carritoProducto {
   display: flex;
@@ -493,26 +494,31 @@ html {
   border-style: none;
 }
 .main #sectionCarrito .containerCarrito .carritoAcciones {
-  display: flex;
-  flex-direction: row;
   width: 80%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  justify-content: space-between;
 }
-.main #sectionCarrito .containerCarrito .carritoAcciones .carritoTotal {
+.main #sectionCarrito .containerCarrito .carritoAcciones .containerAcciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main #sectionCarrito .containerCarrito .carritoAcciones .containerAcciones .carritoTotal {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
-.main #sectionCarrito .containerCarrito .carritoAcciones button {
+.main #sectionCarrito .containerCarrito .carritoAcciones .containerAcciones button {
   background: rgb(255, 183, 0);
   width: 200px;
   height: 30px;
   text-transform: uppercase;
   border-style: none;
   border-radius: 5px;
+}
+.main #sectionCarrito .containerCarrito .carritoAcciones .containerAcciones button:hover {
+  cursor: pointer;
 }
 .main #sectionCarrito .containerCarrito .carritoComprado {
   text-align: center;
